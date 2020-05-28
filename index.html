@@ -11,29 +11,14 @@
   </head>
   <body>
     <!-- navbar -->
-    <!-- we can use this as base navigation styles -->
-    <!-- <ul class="nav nav-tabs">
-      <li class="nav-item">
-        <a class="nav-link active" href="#">Active</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#">Disabled</a>
-      </li>
-    </ul>
-    <div class="container pt-4"> -->
-
-<!-- for our navigation, we will use this set up from the navbar -->
 <!-- this navbar is responsive on smaller screens creating a drop down hamburger in the mediium range-->
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
         <!-- this will provide a link to our brand or home page -->
-        <!-- giving the order-1 class will set all of the items to the right hand side -->
-        <a class="navbar-brand order-1" href="https://gamalielburgos.com/" target= "_blank">Presented by Gamaliel Burgos</a>
+       <!-- giving the container on the content so the content fits -->
+        <div class = "container"> 
+          <!-- giving the order-1 class will set all of the items to the right hand side, mr-0 will remove the margin -->
+        <a class="navbar-brand order-1 mr-0" href="https://gamalielburgos.com/" target= "_blank">Presented by Gamaliel Burgos</a>
+
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -45,8 +30,10 @@
             <a class="nav-item nav-link" href="#schedule">Schedule</a>
           </div>
         </div>
+      </div>
       </nav>
       <!-- working on the about page -->
+      <div class ='container mt-5'>
       <div class="row">
         <div class="col-md col-xl-6 order-md-2">
           <h3 class="mb-4">About Full Stack Conference</h3>
@@ -105,6 +92,7 @@
       <hr />
       <!-- /signup form -->
     </div>
+  </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
