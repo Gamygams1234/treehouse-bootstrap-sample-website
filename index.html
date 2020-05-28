@@ -37,6 +37,12 @@
         <div class="container text-sm-center pt-5">
           <h1 class="display-2">Full Stack Conference</h1>
           <p class="lead">A one day conference about all things Javascript.</p>
+          <div class="btn-group mt-4" role="group" aria-label="Callout buttons">
+            <button type="button" class="btn btn-primary btn-lg">Register Now</button>
+            <!-- we can apply the same styles to an A tag -->
+            <a  class="btn btn-light btn-lg" href= "#speakers"> See Speakers</a>
+
+          </div>
         </div>
       </div>
       <!-- working on the about page -->
@@ -71,11 +77,15 @@
 
       <!-- speakers -->
 
-      <h1 class="display-4 text-center my-5 text-muted">Speakers</h1>
+      <h1 id = "speakers" class="display-4 text-center my-5 text-muted">Speakers</h1>
       speaker bios go here
       <!-- schedule -->
       <h1 class="display-4 text-center my-5 text-muted">Schedule</h1>
       Schedule goes here
+
+    <!-- callout button goes here -->
+    <!-- mx-auto will center the button itself -->
+    <button type="button" class="btn btn-info btn-lg d-block mx-auto my-5">Don't Miss Out, Register Now!</button>
 
       <!-- signup form -->
       <hr />
@@ -86,6 +96,7 @@
         </div>
         <!-- the ml-auto will give a marign left of auto if there needs to be space in the middle -->
         <!-- for this one, the margin will span 2 fr in the center -->
+
         <div class="col-md col-xl-5 ml-auto">
           <p><strong>Stay up-to-date on Full Stack Conf</strong></p>
           <div class="input-group">
