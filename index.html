@@ -10,27 +10,26 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous" />
   </head>
   <body>
-    <!-- Adding som padding at the top of the conteiner -->
     <div class="container pt-4">
       <!--  about -->
       <div class="row">
-        <!-- this will ensure that the columns get stacked once it gets to the xs range -->
-        <!--  we can also have one column span by using a  class of  "col-sm-6", and this will have it span half of the width-->
-        <!--  we can change when it becomes responsive by using the classes sm, md, lg -->
-        <!-- we add col-xl-6 at the end to have it span 6fr when the page gets to be xl -->
-        <div class="col-md col-xl-6">
-          <h3 class="mb-4">About Full Stack Conf</h3>
-          <img class="mb-4 img-fluid rounded" src="img/pdx.jpg" alt="portland" />
+        <!--  we can set the order of how we want the content to appear by using the order-md-3 -->
+        <!-- We have to set the number to all the colums in the row in order to make it work -->
+        <div class="col-md col-xl-6 order-md-2">
+          <h3 class="mb-4">About Full Stack Conference</h3>
+          <!-- we are setting the display to none on the image -->
+          <!-- however, when the page reaches to the small screen, then we can display the image to block using d-sm-block -->
+          <img class="mb-4 img-fluid rounded d-none d-sm-block" src="img/pdx.jpg" alt="portland" />
           <p>The beautiful city of Portland, Oregon will be the host city for Full Stack Conf!</p>
           <p>Explore the future of JavaScript with a lineup of industry professionals. Discover new techniques to advance your career as a web developer.</p>
         </div>
-        <div class="col-md">
+        <div class="col-md order-md-1">
           <h3 class="mb-4">Expert Speakers</h3>
           <p>Our expert speaker lineup was just announced, so don't wait too long before grabbing your tickets!</p>
           <p>Want to meet the international JavaScript community and share skills with some of the world's top experts, hackers, and makers? Be the first to know what to expect for the future of JavaScript.</p>
           <p>Full Stack Conf is committed to being inclusive and welcoming for everyone. We look forward to another intensive day of learning and sharing.</p>
         </div>
-        <div class="col-md">
+        <div class="col-md order-md-3">
           <h3 class="mb-4">What You'll Learn</h3>
           <ul>
             <li><strong>MongoDB</strong>: NoSQL database</li>
@@ -51,6 +50,28 @@
       <!-- schedule -->
       <h1 class="display-4 text-center my-5 text-muted">Schedule</h1>
       Schedule goes here
+
+      <!-- signup form -->
+      <hr />
+      <div class="row py-4 text-muted">
+        <div class="col-md col-xl-5">
+          <p><strong>About Treehouse</strong></p>
+          <p>Treehouse brings affordable technology education to people everywhere to help them achieve their dreams and change the world.</p>
+        </div>
+        <!-- the ml-auto will give a marign left of auto if there needs to be space in the middle -->
+        <!-- for this one, the margin will span 2 fr in the center -->
+        <div class="col-md col-xl-5 ml-auto">
+          <p><strong>Stay up-to-date on Full Stack Conf</strong></p>
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Email" />
+            <span class="input-group-btn">
+              <button class="btn btn-primary" type="button">Sign up</button>
+            </span>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <!-- /signup form -->
     </div>
 
     <!-- Optional JavaScript -->
