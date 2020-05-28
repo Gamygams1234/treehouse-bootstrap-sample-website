@@ -10,15 +10,47 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous" />
   </head>
   <body>
-    <div class="container pt-4">
-      <!--  about -->
+    <!-- navbar -->
+    <!-- we can use this as base navigation styles -->
+    <!-- <ul class="nav nav-tabs">
+      <li class="nav-item">
+        <a class="nav-link active" href="#">Active</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+      </li>
+    </ul>
+    <div class="container pt-4"> -->
+
+<!-- for our navigation, we will use this set up from the navbar -->
+<!-- this navbar is responsive on smaller screens creating a drop down hamburger in the mediium range-->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <!-- this will provide a link to our brand or home page -->
+        <!-- giving the order-1 class will set all of the items to the right hand side -->
+        <a class="navbar-brand order-1" href="https://gamalielburgos.com/" target= "_blank">Presented by Gamaliel Burgos</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="#about">About</a>
+            <a class="nav-item nav-link" href="#spaeakers">Speakers</a>
+            <a class="nav-item nav-link" href="#schedule">Schedule</a>
+          </div>
+        </div>
+      </nav>
+      <!-- working on the about page -->
       <div class="row">
-        <!--  we can set the order of how we want the content to appear by using the order-md-3 -->
-        <!-- We have to set the number to all the colums in the row in order to make it work -->
         <div class="col-md col-xl-6 order-md-2">
           <h3 class="mb-4">About Full Stack Conference</h3>
-          <!-- we are setting the display to none on the image -->
-          <!-- however, when the page reaches to the small screen, then we can display the image to block using d-sm-block -->
+
           <img class="mb-4 img-fluid rounded d-none d-sm-block" src="img/pdx.jpg" alt="portland" />
           <p>The beautiful city of Portland, Oregon will be the host city for Full Stack Conf!</p>
           <p>Explore the future of JavaScript with a lineup of industry professionals. Discover new techniques to advance your career as a web developer.</p>
