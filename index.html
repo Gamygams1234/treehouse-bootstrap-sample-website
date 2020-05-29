@@ -271,12 +271,22 @@
             </button>
           </div>
           <div class="modal-body">
-            Form goes here...
+       <!-- registration form -->
+       <!-- we are mostly going to use form group and form control -->
+       <!-- we could give the form tag a form-inline class to make the input and the name go side by side -->
+       <form>
+        <div class="form-group">
+          <!-- we could use the class sr-only for screen readers and just put the label in the place holder -->
+          <label class = "sr-only" for="name">Name:</label>
+          <input type="text" class="form-control" id="name" placeholder="Name">
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" class="form-control" id="email" >
+        </div>
+      </form>
           </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
-          </div>
+      
         </div>
       </div>
     </div>
