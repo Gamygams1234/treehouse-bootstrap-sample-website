@@ -12,11 +12,9 @@
   <body>
     <!-- navbar -->
 
-      <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
-
-        <div class = "container"> 
-       
-        <a class="navbar-brand order-1 mr-0" href="https://gamalielburgos.com/" target= "_blank">Presented by Gamaliel Burgos</a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+      <div class="container">
+        <a class="navbar-brand order-1 mr-0" href="https://gamalielburgos.com/" target="_blank">Presented by Gamaliel Burgos</a>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -30,23 +28,22 @@
           </div>
         </div>
       </div>
-      </nav>
+    </nav>
 
-      <!-- jumbotron -->
-      <div class="jumbotron jumbotron-fluid bg-info text-white">
-        <div class="container text-sm-center pt-5">
-          <h1 class="display-2">Full Stack Conference</h1>
-          <p class="lead">A one day conference about all things Javascript.</p>
-          <div class="btn-group mt-4" role="group" aria-label="Callout buttons">
-            <button type="button" class="btn btn-primary btn-lg">Register Now</button>
-            <!-- we can apply the same styles to an A tag -->
-            <a  class="btn btn-light btn-lg" href= "#speakers"> See Speakers</a>
-
-          </div>
+    <!-- jumbotron -->
+    <div class="jumbotron jumbotron-fluid bg-info text-white">
+      <div class="container text-sm-center pt-5">
+        <h1 class="display-2">Full Stack Conference</h1>
+        <p class="lead">A one day conference about all things Javascript.</p>
+        <div class="btn-group mt-4" role="group" aria-label="Callout buttons">
+          <button type="button" class="btn btn-primary btn-lg">Register Now</button>
+          <!-- we can apply the same styles to an A tag -->
+          <a class="btn btn-light btn-lg" href="#speakers"> See Speakers</a>
         </div>
       </div>
-      <!-- working on the about page -->
-      <div class ='container pt-4'>
+    </div>
+    <!-- working on the about page -->
+    <div class="container pt-4">
       <div class="row">
         <div class="col-md col-xl-6 order-md-2">
           <h3 class="mb-4">About Full Stack Conference</h3>
@@ -77,15 +74,15 @@
 
       <!-- speakers -->
 
-      <h1 id = "speakers" class="display-4 text-center my-5 text-muted">Speakers</h1>
+      <h1 id="speakers" class="display-4 text-center my-5 text-muted">Speakers</h1>
       speaker bios go here
       <!-- schedule -->
       <h1 class="display-4 text-center my-5 text-muted">Schedule</h1>
       Schedule goes here
 
-    <!-- callout button goes here -->
-    <!-- mx-auto will center the button itself -->
-    <button type="button" class="btn btn-info btn-lg d-block mx-auto my-5">Don't Miss Out, Register Now!</button>
+      <!-- callout button goes here -->
+      <!-- mx-auto will center the button itself -->
+      <button type="button" class="btn btn-info btn-lg d-block mx-auto my-5">Don't Miss Out, Register Now!</button>
 
       <!-- signup form -->
       <hr />
@@ -109,8 +106,43 @@
       </div>
       <hr />
       <!-- /signup form -->
+
+      <!-- Footer goes here -->
+      <div class="row py-3">
+        <div class="col-md-7">
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Community</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Tracks</a>
+            </li>
+            <li class="nav-item">
+              <!-- the class dropup will change the arrow going up -->
+              <div class="btn-group dropup">
+                <button type="button" class="btn btn-outline-secondary">Other Confs</button>
+                <button type="button" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <span class="sr-only">Toggle Dropdown</span>
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">CSS Conf</a>
+                  <a class="dropdown-item" href="#">Python Conf</a>
+                  <a class="dropdown-item" href="#">Java Conf</a>
+                  <!-- this is a dividing line that can be added, however, we will delete it next session -->
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Swift Conf</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md text-md-right">
+          <small>&copy; 2020 Full Stack Conf &amp; Gamaliel Bur</small>
+        </div>
+      </div>
+
+      <!-- /container closing div -->
     </div>
-  </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
