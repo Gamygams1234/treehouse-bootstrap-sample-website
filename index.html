@@ -275,14 +275,26 @@
        <!-- we are mostly going to use form group and form control -->
        <!-- we could give the form tag a form-inline class to make the input and the name go side by side -->
        <form>
+         <h5 class = "mb-4">Basic Info</h5>
         <div class="form-group">
           <!-- we could use the class sr-only for screen readers and just put the label in the place holder -->
-          <label class = "sr-only" for="name">Name:</label>
-          <input type="text" class="form-control" id="name" placeholder="Name">
+          <label  for="name">Name:</label>
+          <input type="text" class="form-control" id="name" >
         </div>
         <div class="form-group">
           <label for="email">Email:</label>
           <input type="email" class="form-control" id="email" >
+        </div>
+        <div class="form-group">
+          <label for="role">Job Role:</label>
+          <select class = "form-control" id = "role">
+            <option value="full stack js developer">Full Stack JavaScript Developer</option>
+<option value="front end developer">Front End Developer</option>
+<option value="back end developer">Back End Developer</option>
+<option value="designer">Designer</option>
+<option value="student">Student</option> 
+
+          </select>>
         </div>
       </form>
           </div>
